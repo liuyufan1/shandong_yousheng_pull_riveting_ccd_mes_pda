@@ -29,7 +29,7 @@ const loadSettings = () => {
   if (savedSettings) {
     try {
       const settings = JSON.parse(savedSettings)
-      serverIp.value = settings.ip || '192.168.1.100'
+      serverIp.value = settings.ip || '192.168.124.10'
       selectedMachine.value = settings.machine || 'MS11抽芯拉铆左'
     } catch (e) {
       console.error('加载设置失败:', e)
